@@ -1,0 +1,13 @@
+extends layout
+
+block content
+            
+            section( class='text-center ultimo' )
+                div( class='container content-section' )
+                    div( class='row justify-content-center' )
+                        div( class='col-12 p-3 text-left' )
+                            a( href='/galeria') Volver a Galería Fotográfica
+                        each item, i in files
+                            div( class='col-lg-3 col-md-4 col-sm-6 p-4' )
+                                a( href= titulo === 'Galería Conchos' ? 'content/photos/conchos/'+item.name : 'content/photos/usumacinta/'+item.name data-lightbox='roadtrip' )
+                                    img( src= titulo === 'Galería Conchos' ? '/imagen/'+item.name+'?path=photos/conchos' : '/imagen/'+item.name+'?path=photos/usumacinta' class='img-fluid rounded hoverable' )

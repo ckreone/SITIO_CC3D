@@ -1,0 +1,29 @@
+{
+  "name": "cc3d",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.14",
+    "@ffprobe-installer/ffprobe": "^1.0.9",
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "^4.16.3",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "0.0.1-security",
+    "gm": "^1.23.1",
+    "lightbox2": "^2.10.0",
+    "mime": "^2.2.0",
+    "morgan": "~1.9.0",
+    "node-ffprobe": "^1.2.2",
+    "nodemailer": "^4.6.5",
+    "pug": "^2.0.0-rc.4",
+    "serve-favicon": "~2.4.5",
+    "thumbbot": "^0.4.1",
+    "thumbsupply": "^0.2.1",
+    "uglify-js": "^3.3.27"
+  }
+}

@@ -1,0 +1,77 @@
+doctype html
+
+html( lang='es-MX' )
+    
+    head
+        title= titulo
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible' content='IE-edge' )
+        meta( name='viewport' content='width=device-width, initial-scale=1' )
+        
+        meta( name='description' content='Impactos socioambientales del cambio climático registrados en las cuencas del río Conchos y del río Usumacinta.' )
+        meta( name='author' content='ckreo.one@gmail.com' )
+        
+        link( href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet' )
+        
+        link( href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' )
+        link( href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet' )
+        
+        link( href='css/style.css' rel='stylesheet' )
+        link( href='css/square.css' rel='stylesheet' type='text/css' )
+        link( href='vendor/aos-master/dist/aos.css' rel='stylesheet' )
+        
+    
+    body( class='default' )
+        
+        div( id='preloader' )
+            div( id='load' )
+        
+        include nav
+        
+        div( class='hamburger scroll' )
+            i( class='material-icons' id='sidebarCollapse' ) menu
+        
+        section( class='index fondo d-flex justify-content-center align-items-center' )
+            div( class='container' )
+                div( class='row' )
+                    div( class='col-xl-10 col-lg-10 col-md-10 col-sm-12 mx-auto' )
+                        div( class='container' )
+                            div( class='row' )
+                                div( class='col-12 mt-5' )
+                                    h4( class='titulo text-center' )= titulo
+                            div( class='row justify-content-center' )
+                            
+                                div( class='col-lg-3 col-md-6 col-sm-6 mb-4' )
+                                    div( class='cube sombra_2 scale d-flex justify-content-center align-items-center' )
+                                        a( href='https://www.gob.mx/imta' target='_blank' )
+                                            img( src='img/logos/ind/IMTA.png' class='img-fluid ' )
+                
+                                div( class='col-lg-3 col-md-6 col-sm-6 mb-4' )
+                                    div( class='cube sombra_2 scale d-flex justify-content-center align-items-center' )
+                                        a( href='https://www.conacyt.gob.mx/' target='_blank' )
+                                            img( src='img/logos/ind/CONACYT.png' class='img-fluid' )
+                
+                                div( class='col-lg-3 col-md-6 col-sm-6 mb-4' )
+                                    div( class='cube sombra_2 scale d-flex justify-content-center align-items-center' )
+                                        a( href='https://www.gob.mx/semarnat' target='_blank' )
+                                            img( src='img/logos/ind/SEMARNAT.png' class='img-fluid' )
+                
+                                div( class='col-lg-3 col-md-6 col-sm-6 mb-4' )
+                                    div( class='cube sombra_2 scale d-flex justify-content-center align-items-center' )
+                                        a( href='http://web.chapingo.mx/' target='_blank' )
+                                            img( src='img/logos/ind/UAC.png' class='img-fluid reduce' )
+                
+                                div( class='col-lg-3 col-md-6 col-sm-6 mb-4' )
+                                    div( class='cube sombra_2 scale d-flex justify-content-center align-items-center' )
+                                        a( href='http://www.uacj.mx/Paginas/Default.aspx' target='_blank' )
+                                            img( src='img/logos/ind/UACJ.png' class='img-fluid reduce' )
+                            
+    
+    script( src='vendor/jquery/jquery.min.js' )
+    script( src='vendor/bootstrap/js/bootstrap.bundle.min.js' )
+    script( src='vendor/jquery-easing/jquery.easing.min.js' )
+    
+    script( src='vendor/lightbox2/dist/js/lightbox.js' )
+    
+    script( src='vendor/affix.js' )
+    script( src='js/scripts.js' )

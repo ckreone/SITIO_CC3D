@@ -1,0 +1,57 @@
+extends layout
+
+block content
+    
+        //section( class='borde' )
+        div( class='container content-section' )
+        
+            div( class='row' )
+            
+                aside( class='col-lg-2 col-md-4 col-sm-12' )
+                    div( class='mt-5 mb-3 affix-top' id='sidemenu' )
+                        ul( class='nav flex-sm-column flex-row' )
+                            li( class='nav-item' )
+                                a( href='#sec1' class='nav-link js-scroll' ) Introducción
+                            li( class='nav-item' )
+                                a( href='#sec2' class='nav-link js-scroll' ) Clima
+                            li( class='nav-item' )
+                                a( href='#sec3' class='nav-link js-scroll' ) Social
+                            li( class='nav-item' )
+                                a( href='#sec4' class='nav-link js-scroll' ) Ambiental
+                                        
+                main( class='col' )
+                
+                    //div( class='col-8 mx-auto mb-5' )
+                        img( src='img/deli-conchos.png' class='img-fluid' )
+                        
+                    div( id='sec1' class='py-5' )
+                        h2( class='text-center' ) Introducción
+                        p( class='text-justify' ) La cuenca del río Conchos se localiza en la porción sureste del estado de Chihuahua y abarca 41 de sus 67 municipios, así como también dos municipios al norte del estado de Durango. Cuenta con un área aproximada de 74,371 km2.                        
+                        p( class='text-justify' ) La #[a( href="http://www.conabio.gob.mx" target="_blank" ) Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (Conabio)] identifica cinco tipos de clima en la cuenca: árido semicálido, árido templado, muy árido semicálido, muy árido templado y semiárido templado. La precipitación es del tipo monzónico (máximo de lluvias en verano) y varía entre 200 y 800 mm a lo largo de la cuenca. Los valores más bajos se encuentran hacia la parte media y baja de la cuenca y los altos corresponden a la parte montañosa en la Sierra Madre Occidental.
+                        p( class='text-justify' ) El principal escurrimiento natural es el río Conchos, que nace en las faldas de la Sierra Madre Occidental con precipitación proveniente del océano Pacífico. Se abastece de una gran cantidad de escurrimientos perenes durante el periodo de lluvias y, la mayor parte del año, por los tres tributarios: el río Florido, el río San Pedro y el río Chuviscar.
+                        p( class='text-justify' ) Por muchos años, la cuenca del río Conchos ha sido objeto de diversos estudios. En parte, por la importancia que tiene para la economía del estado de Chihuahua, además del volumen de agua que se comparte internacionalmente dentro del Tratado de Aguas Internacionales de 1944 entre México y Estados Unidos de América.
+                        p( class='text-justify' ) Las discusiones derivadas del uso de agua que se encuentra en su totalidad concesionada o comprometida vía el tratado internacional, hacen que el estudio, monitoreo y manejo de la cuenca se vuelva, literalmente, un asunto de seguridad nacional con implicaciones en las relaciones binacionales.
+                        p( class='text-justify' ) El esfuerzo que la #[a( href="https://www.gob.mx/conagua" target="_blank" ) Comisión Nacional del Agua (Conagua)] y el #[a( href="http://www.cuencariobravo.org" target="_blank" ) Consejo de Cuenca del Río Bravo] hacen para reglamentar el uso del agua pretende reducir los conflictos ya presentados entre los diferentes usuarios para, al mismo tiempo, buscar anticiparse a las nuevas disputas que se estima aparecerán por el aumento de la demanda de agua en la cuenca.
+                        p( class='text-justify' ) Por otra parte, la sobreexplotación de acuíferos en la cuenca y su consiguiente deterioro en la calidad de agua en las zonas más pobladas del estado hacen que se considere la posibilidad de intercambio de agua superficial para uso público urbano en lugar de agua subterránea, por lo que también es importante estudiar los posibles efectos derivados del cambio climático en la calidad del agua.
+                        p( class='text-justify' ) En los periodos de sequía que con recurrencia sufre el estado, el manejo de las presas representa una medida de adaptación que permite reducir la vulnerabilidad a la sequía hidrológica; sin embargo, la deforestación en la parte alta de la cuenca y su impacto en la generación de sedimentos en el cauce de los tributarios es una variable que reduce la capacidad de gestión y que, al mismo tiempo, produce un cambio negativo en toda la cuenca que se acrecienta en los periodos de sequía.
+                        p( class='text-justify' ) Dadas las actuales proyecciones de cambio climático se espera un incremento entre 2 y 5°C para la cuenca dependiendo de la trayectoria de concentración representativa (RCP por sus siglas en inglés), así como un decremento en la precipitación entre 5 y 10% hacia finales de siglo. Lo anterior implica que las sequias que afectan a la zona pudieran ser más frecuentes e intensas en las décadas por venir. Por lo cual es muy importante establecer planes y medidas de adaptación que ayuden a minimizar los factores negativos y aprovechar las nuevas oportunidades que se presenten a futuro.
+                        p( class='text-justify' ) Sin embargo, como ya se mencionó anteriormente, este proyecto se enfoca en el análisis histórico de la información climática, ambiental y social, para poder establecer con certeza si el cambio climático global está ya siendo un factor determinante en las últimas décadas.
+                        p( class='text-justify' ) A continuación se presentan los principales resultados encontrados por el presente proyecto en cada una de sus componentes.
+                                
+                    div( id='sec2' class='py-5' )
+                        h3( class='text-center' ) Clima
+                        p( class='text-justify' ) Se trabajó con toda la información histórica de estaciones climatológicas en la cuenca del río Conchos disponible del #[a( href="http://smn.cna.gob.mx/es/" target="_blank" ) Servicio Meteorológico Nacional] hasta el año 2015. Después de realizar el análisis de calidad de datos se encuentra que solo 14 de las 110 estaciones climatológicas de la cuenca (i.e.  solo el 13%) cumplen con las condiciones establecidas por la #[a( href="https://www.wmo.int/pages/index_es.html" target="_blank" ) Organización Meteorológica Mundial (OMM)] de tener al menos cubierto el 80% de datos diarios en un período “climático” de al menos 30 años. Dicho período encontrado para la cuenca del río Conchos fue de 1961-1990, con lo cual podemos ver que se “pierden” al menos las últimas dos décadas de información debido a falta de información ya que a partir de la década de los 90’s se comenzaron a perder muchas estaciones climatológicas en el país descendiendo de más de 5000 estaciones a menos de 2000 que se tienen en la actualidad. Desafortunadamente estás últimas dos décadas sin información son las que resultan de mayor incremento en la temperatura global según lo reportado por el #[a( href="http://www.ipcc.ch/home_languages_main_spanish.shtml" target="_blank" ) IPCC].
+                        p( class='text-justify' ) La homogeneización de los datos climatológicos fue llevada a cabo con el software #[a( href="http://www.climatol.eu/tt-hom/index.html" target="_blank" ) Climatol ] uno de los más reconocidos en este rubro a nivel mundial. Finalmente los índices climáticos y sus tendencias se calcularon utilizando diferentes programas en el lenguaje de programación estadístico #[a( href="https://www.r-project.org" target="_blank" ) R], tales como #[a( href="http://etccdi.pacificclimate.org/software.shtml" target="_blank" ) RClimDex].
+                        p( class='text-justify' ) Entre los resultados más notables se encuentra que los días de helada (Tmin<0°C) decrecieron para todas las estaciones de la cuenca en el período 1961-1990 resultado que concuerda con que el valor mínimo mensual de la temperatura mínima diaria ha ido aumentando (por lo tanto hay un menor número de heladas) en 13 de las 14 estaciones. Los días de verano (tomados aquí como aquellos en que la Tmax>30 C) aumentaron para aproximadamente el 50% de las estaciones y decrecieron para la otra mitad. En cuanto a la precipitación, fue en decremento para la parte sur (la más lluviosa) de la cuenca y en aumento para la norte (menos lluviosa) de la cuenca.
+                                
+                    div( id='sec3' class='py-5 px-2' )
+                        h3( class='text-center' ) Social
+                        //p( class='text-justify' ) ---
+                                
+                    div( id='sec4' class='py-5 px-2' )
+                        h3( class='text-center' ) Ambiental
+                        //p( class='text-justify' ) ---
+                
+                
+                div( class='col-9 mx-auto my-5' )
+                    img( src='img/deli-conchos.png' class='img-fluid' )

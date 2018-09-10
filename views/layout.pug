@@ -1,0 +1,93 @@
+doctype html
+
+html( lang='es-MX' )
+    
+    head
+        title= titulo
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible' content='IE-edge' )
+        meta( name='viewport' content='width=device-width, initial-scale=1' )
+        
+        meta( name='description' content='Impactos socioambientales del cambio climático registrados en las cuencas del río Conchos y del río Usumacinta.' )
+        meta( name='author' content='ckreo.one@gmail.com' )
+        
+        link( href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet' )
+        link( href='vendor/lightbox2/dist/css/lightbox.css' rel='stylesheet' )
+        
+        link( href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' )
+        link( href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet' )
+        link( href='css/style.css' rel='stylesheet' )
+        link( href='css/square.css' rel='stylesheet' type='text/css' )
+        link( href='vendor/aos-master/dist/aos.css' rel='stylesheet' )
+        
+        //link( href='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js' rel='stylesheet' )
+        
+        
+    
+    case titulo
+        when 'Conchos'
+            body( class='conchos' data-spy='scroll' data-target='#sidemenu' )
+        when 'Usumacinta'
+            body( class='usumacinta' data-spy='scroll' data-target='#sidemenu' )
+        default
+            body( class='default' data-spy='scroll' data-target='#sidemenu' )
+    
+    div( id='preloader' )
+        div( id='load' )
+        
+    include nav
+        
+    div( class='hamburger scroll' )
+        i( class='material-icons' id='sidebarCollapse' ) menu
+    
+    
+    section( class='fondo d-flex' )
+        div( class='container my-auto' )
+            div( class='row' )
+                div( class='col-12 mx-auto' )
+                    h4( class='titulo text-center' )= titulo
+            div( class='row' )
+                div( class='col' )
+                    div( class='down text-center' )
+                        a( href='#inicio' class='js-scroll' )
+                            i( class='material-icons flecha' ) keyboard_arrow_down
+                            
+                        
+    div( class='wrapper' id='inicio' )
+        block content
+            
+    div( class='bg_logos' )
+        div( class='container' )
+            //div( class='row justify-content-center mb-3 mt-5' )
+            div( class='row justify-content-center' )
+                div( class='col-lg-10 col-12' )
+                    img( src='img/logos/s.png' class='img-fluid' )
+            //div( class='mask' )
+            
+        
+    footer( class='footer pt-4' )
+        div( class='container text-center' )
+            p PERIODO DEL PROYECTO: MAYO 2016 - ABRIL 2018 <br/><br/> Copyright 2018 &copy; SITIO OFICIAL
+    
+    script( src='vendor/jquery/jquery.min.js' )
+    script( src='vendor/bootstrap/js/bootstrap.bundle.min.js' )
+    script( src='vendor/jquery-easing/jquery.easing.min.js' )
+    
+    script( src='vendor/lightbox2/dist/js/lightbox.js' )
+    
+    script( src='vendor/affix.js' )
+    script( src='js/scripts.js' )
+                
+        
+        //script( src='vendor/jquery/jquery.min.js' )
+        //script( src='vendor/bootstrap/js/bootstrap.min.js' )
+        //script( src='vendor/jquery-easing/jquery.easing.min.js' )
+        
+        
+        //script( src='vendor/lightbox2/dist/js/lightbox.js' )
+        
+        //script( src='vendor/aos-master/dist/aos.js' )
+        
+        //script( src='vendor/affix.js' )
+        
+        //script( src='js/scripts.js' )

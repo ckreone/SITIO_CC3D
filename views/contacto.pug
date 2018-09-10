@@ -1,0 +1,66 @@
+doctype html
+
+html( lang='es-MX' )
+    
+    head
+        title= titulo
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible' content='IE-edge' )
+        meta( name='viewport' content='width=device-width, initial-scale=1' )
+        
+        meta( name='description' content='Impactos socioambientales del cambio climático registrados en las cuencas del río Conchos y del río Usumacinta.' )
+        meta( name='author' content='ckreo.one@gmail.com' )
+        
+        link( href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet' )
+        
+        link( href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' )
+        link( href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet' )
+        link( href='css/style.css' rel='stylesheet' )
+        link( href='css/square.css' rel='stylesheet' type='text/css' )
+        link( href='vendor/aos-master/dist/aos.css' rel='stylesheet' )
+        
+    
+    body.default
+        
+        div( id='preloader' )
+            div( id='load' )
+        
+        include nav
+        
+        div( class='hamburger scroll' )
+            i( class='material-icons' id='sidebarCollapse' ) menu
+        
+        section( class='index fondo d-flex justify-content-center align-items-center' )
+            div( class='container' )
+                div( class='row' )
+                    div( class='contacto col-xl-6 col-lg-6 col-md-10 col-sm-12 mx-auto' )
+                        h1( class='text-center' )= titulo
+                        form( class='mt-4' action='send_mail' method='post' )
+                            div( class='form-group row' )
+                                label( for='nombre' class='col-sm-4 col-form-label' ) Nombre
+                                div( class='col-sm-8' )
+                                    input( type='text' class='form-control' id='nombre' name='nombre' required )
+                            div( class='form-group row' )
+                                label( for='correo' class='col-sm-4 col-form-label' ) Correo Electrónico
+                                div( class='col-sm-8' )
+                                    input( type='email' class='form-control' id='correo' name='correo' required )                                    
+                            div( class='form-group row' )
+                                label( for='telefono' class='col-sm-4 col-form-label' ) Teléfono
+                                div( class='col-sm-8' )
+                                    input( type='tel' class='form-control' id='telefono' name='telefono' minlength='7' required )
+                            div( class='form-group row' )
+                                label( for='mensaje' class='col-sm-4 col-form-label' ) Mensaje
+                                div( class='col-sm-8' )
+                                    textarea( rows='4' class='form-control' id='mensaje' name='mensaje' required )
+                            button( type='submit' class='btn btn-block mt-5' ) Enviar
+                            
+                            
+    
+    script( src='vendor/jquery/jquery.min.js' )
+    script( src='vendor/bootstrap/js/bootstrap.bundle.min.js' )
+    script( src='vendor/jquery-easing/jquery.easing.min.js' )
+    
+    script( src='vendor/lightbox2/dist/js/lightbox.js' )
+    
+    script( src='vendor/affix.js' )
+    script( src='js/scripts.js' )

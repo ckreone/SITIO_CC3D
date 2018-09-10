@@ -1,0 +1,222 @@
+
+/*.no-csstransforms .diamonds {
+    max-width: 1060px;
+}
+.no-csstransforms .hex {
+    margin: 0 20px 20px 0;
+}*/
+
+
+
+.diamonds {
+    /*font-family: 'Dosis', sans-serif;
+    margin: 40px auto;*/
+    font-size: 0;
+    padding: 0;
+}
+
+
+.hex {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.diamonds .diamond {
+    /*font-size: 18px;
+    color: #ffffff;
+    border-radius: 50px;*/
+    width: 140px;
+    height: 140px;
+    display: block;
+    /*border-radius: 25%;*/
+    overflow: hidden;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.8);
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.8);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: rgba( 114, 224, 255, 1 );
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    -o-perspective: 1000;
+    perspective: 1000;
+}
+
+.diamonds .diamond .tittle {
+    font-size: 1.25rem;
+    color: #000000;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.diamonds .diamond .tittle.cuenca {
+    font-size: 1.7rem;
+}
+
+.diamonds .diamond:hover .tittle {
+    color: #000000;
+}
+
+.diamonds .diamond:hover {
+    z-index: 1;
+    /*border-radius: 10%;*/
+    background-color: #ffffff !important;
+    -webkit-transform: scale(1.2) rotate(-45deg);
+    -moz-transform: scale(1.2) rotate(-45deg);
+    -ms-transform: scale(1.2) rotate(-45deg);
+    -o-transform: scale(1.2) rotate(-45deg);
+    transform: scale(1.2) rotate(-45deg);
+    -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+}
+
+
+.diamonds .cont {
+    width: 140px;
+    height: 140px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    padding: 0 10px;
+}
+
+
+/*.hex:nth-child(2) .diamond {
+    background: #fcc900;
+}
+
+.hex:nth-child(3) .diamond {
+    background: #1da2ff;
+}*/
+
+.hex:nth-child(2) .diamond, .hex:nth-child(3) .diamond {
+    background: rgba(58, 212, 255, 1);
+}
+
+.hex:nth-child(4) .diamond, .hex:nth-child(5) .diamond, .hex:nth-child(6) .diamond {
+    background: rgba(0, 199, 255, 1);
+}
+
+.hex:nth-child(7) .diamond, .hex:nth-child(8) .diamond {
+    background: rgba(58, 212, 255, 1);
+}
+
+
+@media only screen and (min-width: 808px) {
+    .diamonds {
+        max-width: 540px;
+    }
+    .hex:nth-child(1) {
+        margin-left: 200px;
+    }
+    .hex:nth-child( n+2 ) {
+        margin-top: -40px;
+    }
+    .hex:nth-child(2) {
+        margin-left: 100px;
+    }
+    .hex:nth-child(6) {
+        margin-right: 0px;
+    }
+    .hex:nth-child(7) {
+        margin-left: 100px;
+    }
+    .hex:nth-child(9) {
+        margin-left: 200px;
+    }
+}
+
+
+@media only screen and (max-width: 807px) and (min-width: 600px) {
+    .diamonds {
+        max-width: 340px;
+    }
+    .hex:nth-child(1) {
+        margin-left: 100px;
+    }
+    .hex:nth-child( n+2 ) {
+        margin-top: -40px;
+    }
+    .hex:nth-child(3) {
+        margin-right: 0px;
+    }
+    .hex:nth-child(4) {
+        margin-left: 100px;
+    }
+    .hex:nth-child(6) {
+        margin-right: 0px;
+    }
+    .hex:nth-child(7) {
+        margin-left: 100px;
+    }
+    .hex:nth-child(9) {
+        margin-right: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 599px) {
+    .diamonds {
+        padding: 0;
+        text-align: center;
+    }
+    .hex {
+        margin-right: 0;
+        width: 120px;
+    }
+    .diamonds .diamond {
+        height: 120px;
+        width: 120px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    .diamonds .cont {
+        width: 120px;
+        height: 120px;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    .diamonds .diamond .tittle {
+        font-size: 1rem;
+    }
+    .diamonds .diamond .tittle.cuenca {
+        font-size: 1.3rem;
+    }
+    .diamonds .diamond:hover {
+        -webkit-transform: scale(1.05) rotate(0);
+        -moz-transform: scale(1.05) rotate(0);
+        -ms-transform: scale(1.05) rotate(0);
+        -o-transform: scale(1.05) rotate(0);
+        transform: scale(1.05) rotate(0);
+    }
+    .hex .diamond {
+        border: solid 1px #1e90ff;
+        border-radius: 0rem;
+    }
+}

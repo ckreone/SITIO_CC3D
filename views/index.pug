@@ -1,0 +1,136 @@
+doctype html
+
+html( lang='es-MX' )
+
+    head
+        title= titulo
+        meta( charset='utf-8' )
+        meta( http-equiv='X-UA-Compatible' content='IE-edge' )
+        meta( name='viewport' content='width=device-width, initial-scale=1' )
+        
+        meta( name='description' content='Impactos socioambientales del cambio climático registrados en las cuencas del río Conchos y del río Usumacinta.' )
+        meta( name='author' content='ckreo.one@gmail.com' )
+        
+        script( async src='https://www.googletagmanager.com/gtag/js?id=UA-119895744-1' )
+        script( type='text/javascript' ).
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-119895744-1');
+    
+        
+        link( href='vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet' )
+        
+        link( href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' )
+        link( href='https://fonts.googleapis.com/css?family=Material+Icons' rel='stylesheet' )
+        
+        link( href='css/style.css' rel='stylesheet' )
+        link( href='css/square.css' rel='stylesheet' type='text/css' )
+    
+    
+    
+    body( class='inicio' data-spy='scroll' data-target='#sidemenu' )
+        
+        div( id='preloader' )
+            div( id='load' )
+        
+        include nav
+        
+        div( class='hamburger scroll index' )
+            i( class='material-icons' id='sidebarCollapse' ) menu
+            
+            
+           
+        section( class='index fondo' )
+            div( class='container' )
+                div( class='row justify-content-center logo_principal' )
+                    div( class='col-md-10' )
+                        img( src='img/logos/rrr.png' class='img-fluid' )
+                div( class='row' )
+                    div( class='col-md-6' )
+                        h2( class='title' ) Impactos socioambientales del cambio climático registrados en las cuencas del río Conchos y del río Usumacinta.
+                        h5( class='title' ) Fondo Sectorial de Investigación Ambiental SEMARNAT - CONACYT.
+                        h6( class='title' ) Convocatoria S0010-2014-1, Proyecto 249435.
+                div( class='row' )
+                    div( class='col' )
+                        div( class='down text-center' )
+                            a( href='#sec1' class='js-scroll' )
+                                i( class='material-icons flecha' ) keyboard_arrow_down
+                        
+        
+        section( class='info' id='inicio' )
+            div( class='container content-section' )
+                
+                div( class='row justify-content-center' )
+                    
+                    aside( class='col' )
+                        div( class='mt-5 mb-3 affix-top' id='sidemenu' )
+                            ul( class='nav flex-md-column flex-row justify-content-between' )
+                                li( class='nav-item' )
+                                    a( href='#sec1' class='nav-link js-scroll' ) Introducción
+                                li( class='nav-item' )
+                                    a( href='#sec2' class='nav-link js-scroll' ) ¿Por qué estas cuencas?
+                                li( class='nav-item' )
+                                    a( href='#sec6' class='nav-link js-scroll' ) Objetivo general
+                                li( class='nav-item' )
+                                    a( href='#sec7' class='nav-link js-scroll' ) Objetivos específicos
+                                li( class='nav-item' )
+                                    a( href='#sec3' class='nav-link js-scroll' ) Enfoque climático
+                                li( class='nav-item' )
+                                    a( href='#sec4' class='nav-link js-scroll' ) Enfoque ambiental
+                                li( class='nav-item' )
+                                    a( href='#sec5' class='nav-link js-scroll' ) Enfoque social                                
+                    
+                    
+                    main( class='col-md-9' )
+                        
+                        div( id='sec1' class='py-5' )
+                            p( class='text-justify' ) Es indudable que hoy en día el tema de cambio climático es un tema de importancia mundial y está en las agendas ambientales de la mayoría de los países en el mundo. Sin embargo, proyectos como el actual son muy importantes debido a que son escasos los estudios que se enfocan a analizar si el supuesto cambio climático antropogénico está causando ya impactos tangibles a nivel regional. Es por ello que el presente proyecto se enfoca en tratar de demostrar la presencia (o no) del cambio climático realizando un análisis riguroso de las variables climáticas (temperatura de superficie y precipitación) así como los posibles impactos socioambientales en las dos cuencas de estudio.
+                        
+                        div( id='sec2' class='py-5' )
+                            h3( class='text-center' ) ¿Por qué estas cuencas?
+                            p( class='text-justify' ) Las cuencas de estudio, del río Conchos y del río Usumacinta, se escogieron debido a sus altos contrastes. Por un lado, la del río Conchos, caracterizada por ser una zona árida y de latitudes medias, de menor diversidad ecosistémica y relativamente baja densidad de población. Por otro lado, el río Usumacinta es una zona típica tropical donde se registran las mayores precipitaciones a nivel nacional y de gran diversidad de ecosistemas con una mayor densidad de población que su contraparte del norte. Ambas cuencas también resultan ser muy importantes porque son transfronterizas y tienen que compartir aguas con los países vecinos de México. Aun así, la problemática de cada una es muy diferente. Por un lado la cuenca del río Conchos es clave para el Tratado de Aguas Internacionales de 1944 entre México y Estados Unidos de América ya que es el mayor tributario del lado mexicano. Por otro lado, en el Usumacinta, México es principalmente dependiente de las aguas que se liberen en la parte alta de la cuenca que pertenece a Guatemala. La gestión y manejo de aguas en ambas cuencas es de relevancia mayor.
+                        
+                        div( id='sec6' class='py-5' )
+                            h3( class='text-center' ) Objetivo general
+                            p( class='text-justify' ) A partir de las observaciones disponibles para la región de río Conchos y Río Usumacinta determinar si los fenómenos hidroclimáticos (como sequía e inundaciones) presentados en los últimos años son debidos a cambio climático. De esta forma, determinar la influencia de estos fenómenos en la parte ambiental y en las actividades socioeconómicas relevantes de esas regiones.
+                        
+                        div( id='sec7' class='py-5' )
+                            h3( class='text-center' ) Objetivos específicos
+                            ul
+                                li( class='text-justify pb-3' ) Obtener una base de datos climáticos de alta calidad para las cuencas del Río Conchos y Usumacinta aplicando estrictos controles de calidad de datos y análisis de homogeneización a las bases de datos crudas provenientes del CLICOM del SMN.
+                                li( class='text-justify pb-3' ) Determinar los índices y tendencias climáticas de precipitación (P) y temperatura (T) en superficie para los datos de las dos cuencas de estudio y determinar sí hay cambios sustanciales con respecto a dos períodos históricos 1951-1980 vs 1981-2010.
+                                li( class='text-justify pb-3' ) Comparar las funciones de densidad de probabilidad de P y T para los dos períodos mencionados anteriormente y establecer sí hay cambios sustantivos para los cuáles se pueda inferir la presencia de cambio climático.
+                                li( class='text-justify pb-3' ) Caracterizar estadísticamente la variabilidad temporal en los regímenes hidrológicos de dos periodos históricos base y reciente, utilizando atributos biológicos.
+                                li( class='text-justify pb-3' ) Cuantificar las alteraciones hidrológicas asociadas a las perturbaciones climáticas, al comparar los regímenes hidrológicos de los periodos históricos base y reciente y sus repercusiones en el ecosistema ripario.
+                                li( class='text-justify pb-3' ) Caracterizar la dinámica poblacional y las actividades socioeconómicas de las poblaciones ubicadas en las cuencas del Río Conchos y del Río Usumacinta, identificar los fenómenos meteorológicos que hayan impactado en estas cuencas en los últimos (30) años y analizar su impacto en la dinámica demográfica y socioeconómica de las cuencas.
+                        
+                        div( id='sec3' class='py-5' )
+                            h3( class='text-center' ) Enfoque climático
+                            p( class='text-justify' ) Para poder garantizar la mayor confiabilidad en los análisis climáticos de ambas cuencas, se opta por seguir las recomendaciones dadas por el propio Grupo de Expertos en Detección e Índices de Cambio Climático (ETCCDI por sus siglas en inglés). De esta forma, las bases de datos climáticas originales recopiladas del Servicio Meteorológico Nacional pasan por un esquema riguroso de análisis de calidad de datos y homogeneización. A partir de esto, se calculan los 27 índices de cambio climático recomendados por el ETCCDI y se analizan las tendencias históricas.
+                            p( class='text-justify' ) A partir de esto se generaron dos bases de datos principales: la primera conteniendo únicamente las estaciones climáticas que cumplen con al menos el 80% de los datos en un período de 30 años o más; y la segunda trabajando con todas las estaciones disponibles por cuenca, y realizando el análisis de calidad de datos y homogeneización para crear una malla “homogeneizada” que tuviera una buena representación geográfica de la cuenca particular. La resolución espacial de esta malla es de 0.5 grados durante el período 1951-2010.
+                            p( class='text-justify' ) A partir de ahí se presentan aquí los análisis de algunos índices de cambio climático así como sus tendencias observadas en las últimas décadas. De esta forma se pretende aquí demostrar o no la posible influencia de cambio climático antropogénico en los datos de clima observados.
+                            p( class='text-justify' ) Los datos generados por esta componente sirven de punto de partida para los impactos ambientales y sociales analizados en las otras componentes del proyecto.
+                        
+                        div( id='sec4' class='py-5' )
+                            h3( class='text-center' ) Enfoque ambiental
+                            p( class='text-justify' ) Actualmente, las consideraciones ambientales son la clave para una gestión sostenible del agua. El ambiente es un tipo especial de usuario del agua y en muchos aspectos debe ser la parte central de la gestión del recurso hídrico. Esto se considera fundamental para el desarrollo, la reducción de la pobreza, la salud pública, la agricultura, la industria y la producción de energía, así como el desarrollo sostenible de las comunidades cercanas a los ríos. Cambios en los eventos de clima extremo como precipitaciones intensas y sequías, generan cambios hidrológicos en los ríos y por lo mismo un cambio en la disponibilidad de agua. Para determinar los cambios en la disponibilidad del agua para las cuencas se hace necesario cuantificar la variación de la precipitación y las escorrentías utilizando datos medios mensuales y estacionales durante un período de tiempo considerable y representativo. En este proyecto, se cuantifican las alteraciones hidrológicas asociadas a las perturbaciones climáticas, al comparar los regímenes hidrológicos de los periodos históricos base (1951-1980) y reciente (1981-2010) y su repercusiones en el ecosistema ripario para ambas cuencas.
+                            p( class='text-justify' ) Por otro lado, la agricultura depende en gran medida de las condiciones climáticas que se presenten para el desarrollo de los cultivos, en las cuencas del río Conchos y Río Usumacinta es uno de los sectores más importantes, aunque bajo condiciones climáticas contrastantes. Sin duda el cambio climático afectará este sector y los cambios en las variables climáticas ocasionarán cambios en el desarrollo de los cultivos que impactarán la producción agrícola. Una manera de estudiar este impacto es a través del análisis de índices agroclimáticos que son relevantes para el desarrollo de los cultivos. En este sentido en este estudio se realizó un diagnóstico del sector agrícola de ambas cuencas para conocer el estado histórico sobre superficie sembrada, cosechada y producción agrícola, posteriormente se calcularon varios índices agroclimáticos basados en temperatura y precipitación para evaluar la aptitud de ambas cuencas utilizando la base de datos climática en malla para el periodo 1951-2010, se analizaron los cambios ocurridos en estos índices y su tendencia y finalmente se interpolaron los valores calculados a la extensión de cada cuenca para realizar un análisis espacial de los índices calculados.
+                        
+                        div( id='sec5' class='py-5' )
+                            h3( class='text-center' ) Enfoque social
+                            p( class='text-justify' ) En términos sociales y partiendo de la caracterización de la situación socioambiental de las cuencas del río Conchos y del río Usumacinta, para este proyecto se propuso indagar la relación entre la ocurrencia de eventos meteorológicos extremos y los cambios ocurridos en los asentamientos poblacionales y las actividades productivas de la cuenca. De manera complementaria, se trabajaron estudios de caso en cuatro comunidades: una de la parte alta y otra de la baja de cada cuenca, para analizar de manera puntual las percepciones sociales en torno a los efectos del cambio climático en las cuencas y documentar las estrategias que han seguido estas poblaciones para adaptar sus patrones socioeconómicos a las nuevas condiciones ambientales.
+                            p( class='text-justify' ) Finalmente, se diseñó e implementó una estrategia de difusión que consiste en la organización de un flujo de información sistemáticamente conducido, con el eje centrado en el conocimiento de la vulnerabilidad social y las alternativas socioeconómicas y organizacionales frente al cambio climático, que apunten al mejoramiento de la calidad de vida de las poblaciones.                        
+                            
+                            
+                        
+        footer( class='footer' )
+            div( class='container text-center' )
+                p Copyright 2018 &copy; SITIO OFICIAL <br/><br/> PERIODO DEL PROYECTO: MAYO 2016 - ABRIL 2018
+                        
+        
+        script( src='vendor/jquery/jquery.min.js' )
+        script( src='vendor/bootstrap/js/bootstrap.bundle.min.js' )
+        script( src='vendor/jquery-easing/jquery.easing.min.js' )
+        script( src='vendor/affix.js' )
+        script( src='js/scripts.js' )
